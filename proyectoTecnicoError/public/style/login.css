@@ -1,0 +1,129 @@
+/*  LINK https://color.adobe.com/es/create/color-wheel
+paleta de colores colores para contenedres de contenido
+color hesagecimal
+#00DDFF-#003CFF-#008BFF-#00FFCD-#1600FF
+color RGB
+rgb(0, 221, 255)-rgb(0, 60, 255)-rgb(0, 139, 255)-rgb(0, 255, 205)rgb(22, 0, 255)
+paleta de colores colores para contenedres de contenido
+color hesagecimal
+#FFD800-#B2FF00-#FFF700-#FFB900-#47FF00
+color RGB
+rgb(255, 216, 0)-rgb(178, 255, 0)-rgb(255, 247, 0)-rgb(255, 185, 0)-rgb(71, 255, 0)
+*/
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+*:hover, *:focus, *:active{
+    outline: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url("img/ITFIPPrin.png") fixed no-repeat center center;
+
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: #008BFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+form{
+    background: rgba(0, 0, 0, 0);
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input[type="text"]{
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.respuesta{
+    margin: 5px auto;
+    width: 60%;
+    background: wheat;
+    padding: 5px 0;
+}
+.respuesta>p{
+    text-align: center;
+    font-size: 10px;
+    color: red;
+}
+.Resp{
+    display: none;
+}
+.Resp_1{
+    display: none;
+}
+input[type="submit"]{
+    padding: 10px 30px;
+    background: #FFF700;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.checkbox-input{
+    position: relative;
+    margin: 5px;
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.checkbox-input>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-label {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Circular shape */
+    border: 2px solid #555;
+    position: relative;
+    cursor: pointer;
+}
+input[type=checkbox]{
+    position: absolute;
+    opacity: 0;
+}
+/* Style the checked state of the checkbox */
+input[type=checkbox]:checked + .checkbox-label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: #555;
+    border-radius: 50%; /* Circular shape */
+}

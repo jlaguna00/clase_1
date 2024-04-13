@@ -1,0 +1,103 @@
+/*  LINK https://color.adobe.com/es/create/color-wheel
+paleta de colores colores para contenedres de contenido
+color hesagecimal
+#00DDFF-#003CFF-#008BFF-#00FFCD-#1600FF
+color RGB
+rgb(0, 221, 255)-rgb(0, 60, 255)-rgb(0, 139, 255)-rgb(0, 255, 205)rgb(22, 0, 255)
+paleta de colores colores para contenedres de contenido
+color hesagecimal
+#FFD800-#B2FF00-#FFF700-#FFB900-#47FF00
+color RGB
+rgb(255, 216, 0)-rgb(178, 255, 0)-rgb(255, 247, 0)-rgb(255, 185, 0)-rgb(71, 255, 0)
+*/
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+*:hover, *:focus, *:active{
+    outline: none;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header>img{
+    width: 75%;
+    height: 75px;
+}
+nav{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgb(63, 63, 63);
+    z-index: 1;
+}
+.elemento_menu{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Btn_menu{
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    background: rgb(63, 63, 63);
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.Btn_menu>img{
+    width: 100%;
+    height: 100%;
+}
+
+.Btn_ActivaCuenta{
+    padding: 10px 20px;
+    background: rgb(178, 255, 0);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/**/
+main{
+    width: 100%;
+    height: 475px;
+    background: transparent;
+}
+.mapa-article{
+    position: relative;
+    margin: 30px auto;
+    width: 85%;
+    height: 475px;
+    background: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
